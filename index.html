@@ -132,18 +132,24 @@
 
         <!-- Accounts and Buckets Cols -->
         <div class="col ps-2 pe-0">
-          <div class="card bg-primary text-white rounded-0">
-            <div class="card-body pt-2 pb-0 px-2">
+          <div class="card bg-primary text-white rounded-0" style="user-select: none;">
+            <div class="card-body pt-2 pb-0 px-2" data-bs-toggle="collapse" href="#collapseTest1" role="button" aria-expanded="false" aria-controls="collapseTest1" style="user-select: none;">
               <h6 class="card-title d-flex justify-content-between">Test 1<span class="badge bg-dark rounded-pill">£-163,500.00</span></h6>
             </div>
             <ul class="list-group list-group-flush rounded-0">
-              <li class="px-2 list-group-item list-group-item-primary d-flex justify-content-between align-items-center" id="dropspot Test1 [Main]" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <li class="collapse px-2 list-group-item" id="collapseTest1">
+                <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Edit Account</button>
+                <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Delete Account</button>
+                <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Add Bucket</button>
+                <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Delete Bucket</button>
+              </li>
+              <li class="px-2 list-group-item list-group-item-primary d-flex justify-content-between align-items-center" id="dropspot Test1 [Main]" ondrop="drop(event)" ondragover="allowDrop(event)" style="user-select: none;">
                 <div class="payload" id="payload-test1-main" draggable="true" ondragstart="drag(event)" style="cursor: grab; position: absolute; top: 0; left: 0; width: 100%; height: 100%">
                 </div>
                 Main
                 <span class="badge bg-primary rounded-pill">£500.00</span>
               </li>
-              <li class="px-2 list-group-item list-group-item-primary d-flex justify-content-between align-items-center" id="dropspot-test1-gifts" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <li class="px-2 list-group-item list-group-item-primary d-flex justify-content-between align-items-center" id="dropspot-test1-gifts" ondrop="drop(event)" ondragover="allowDrop(event)" style="user-select: none;">
                 <div class="payload" id="payload-test1-gifts" draggable="true" ondragstart="drag(event)" style="cursor: grab; position: absolute; top: 0; left: 0; width: 100%; height: 100%">
                 </div>
                 Gifts
