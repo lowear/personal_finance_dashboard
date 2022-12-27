@@ -139,11 +139,13 @@
               <h6 class="card-title d-flex justify-content-between">Test 1<span class="badge bg-dark rounded-pill">£-163,500.00</span></h6>
             </div>
             <ul class="list-group list-group-flush rounded-0">
-              <li class="collapse px-2 list-group-item" id="collapseTest1">
+              <li class="collapse px-2 list-group-item bg-light" id="collapseTest1">
                 <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Edit Account</button>
                 <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Delete Account</button>
                 <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Add Bucket</button>
                 <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Delete Bucket</button>
+                <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Move Left</button>
+                <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Move Right</button>
                 <button class="btn btn-outline-info btn-sm py-0 rounded-0" style="font-size: smaller;">Online Portal</button>
               </li>
               <li class="px-2 list-group-item list-group-item-primary d-flex justify-content-between align-items-center" id="dropspot Test1 [Main]" ondrop="drop(event)" ondragover="allowDrop(event)" style="user-select: none;">
@@ -316,8 +318,7 @@
               <td>Test 2<span class="fw-light"> - Gifts</span></td>
               <td>Test</td>
               <td>
-                <button type="button" class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Edit</button>
-                <button type="button" class="btn btn-outline-danger btn-sm py-0 rounded-0" style="font-size: smaller;">Delete</button>
+                <button type="button" class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;" href="#editTransactionModal" data-bs-toggle="modal" data-bs-target= "#editTransactionModal">Edit</button>
               </td>
             </tr>
             <tr class="table-primary">
@@ -400,6 +401,60 @@
         </div>
       </div>
       <!-- /Transaction Modal -->
+
+
+            <!-- Edit Transaction Modal -->
+            <div class="modal fade" id="editTransactionModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Edit Transaction</h4>
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal Body -->
+                  <div class="modal-body">
+                    <form>
+                      <div class="input-group pb-1">
+                        <span class="input-group-text rounded-0" style="width: 100px;">ID</span>
+                        <input type="text" required class="form-control rounded-0" id="edit-trans-id" disabled>
+                      </div>
+                      <div class="input-group pb-1">
+                        <span class="input-group-text rounded-0" style="width: 100px;">From</span>
+                        <input type="text" required class="form-control rounded-0" id="edit-trans-from" disabled>
+                      </div>
+                      <div class="input-group pb-1">
+                        <span class="input-group-text rounded-0" style="width: 100px;">To</span>
+                        <input type="text" required class="form-control rounded-0" id="edit-trans-to" disabled>
+                      </div>
+                      <div class="input-group pb-1">
+                        <span class="input-group-text rounded-0" style="width: 100px;">Date</span>
+                        <input type="date" required class="form-control rounded-0" id="edit-trans-date">
+                      </div>
+                      <div class="input-group pb-1">
+                        <span class="input-group-text rounded-0" style="width: 100px;">Value [£]</span>
+                        <input type="number" required class="form-control rounded-0" id="edit-trans-value">
+                      </div>
+                      <div class="input-group pb-1">
+                        <span class="input-group-text rounded-0" style="width: 100px;">Category</span>
+                        <input type="text" required class="form-control rounded-0" id="edit-trans-category">
+                      </div>
+                    </form>
+                  </div>
+                  
+                  <!-- Modal Footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Update Transaction</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Delete Transaction</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- /Edit Transaction Modal -->
 
 
       <!-- New Account Modal -->
