@@ -52,6 +52,8 @@
                 <li><a class="dropdown-item" href="#">This Year</a></li>
                 <li><a class="dropdown-item" href="#">Rolling Week</a></li>
                 <li><a class="dropdown-item" href="#">Rolling Month</a></li>
+                <li><a class="dropdown-item" href="#">Rolling 3 Months</a></li>
+                <li><a class="dropdown-item" href="#">Rolling 6 Months</a></li>
                 <li><a class="dropdown-item" href="#">Rolling Year</a></li>
                 <li><a class="dropdown-item" href="#">All Time</a></li>
               </ul>
@@ -142,6 +144,7 @@
                 <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Delete Account</button>
                 <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Add Bucket</button>
                 <button class="btn btn-outline-primary btn-sm py-0 rounded-0" style="font-size: smaller;">Delete Bucket</button>
+                <button class="btn btn-outline-info btn-sm py-0 rounded-0" style="font-size: smaller;">Online Portal</button>
               </li>
               <li class="px-2 list-group-item list-group-item-primary d-flex justify-content-between align-items-center" id="dropspot Test1 [Main]" ondrop="drop(event)" ondragover="allowDrop(event)" style="user-select: none;">
                 <div class="payload" id="payload-test1-main" draggable="true" ondragstart="drag(event)" style="cursor: grab; position: absolute; top: 0; left: 0; width: 100%; height: 100%">
@@ -432,6 +435,10 @@
                 <div class="input-group pb-1">
                   <span class="input-group-text rounded-0" style="width: 180px;">Date Opened</span>
                   <input type="date" required class="form-control rounded-0" id="account-date">
+                </div>
+                <div class="input-group pb-1">
+                  <span class="input-group-text rounded-0" style="width: 180px;">Website URL</span>
+                  <input type="text" required class="form-control rounded-0" id="account-url">
                 </div>
               </form>
             </div>
